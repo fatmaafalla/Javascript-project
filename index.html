@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page for Game</title>
+	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Black+Ops+One|Shojumaru&display=swap" rel="stylesheet">
+	<style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+            *
+            {
+                padding:0;
+                margin:0;
+                box-sizing: border-box;
+            }
+
+            body
+            {
+            font-family: Dela Gothic One,Verdana, Geneva, Tahoma, sans-serif ;
+            background-color:rgb(247, 192, 247);
+            overflow: hidden;
+
+            }
+		.container{
+			border:1px solid;
+			height: 1078px;
+			width: 1917px;
+			top:0px;
+			position: absolute;
+			left: 0px;
+			padding: 0;
+			background-image: url(https://img.itch.zone/aW1hZ2UvMjI0MTAzLzEwNjE2NTYucG5n/original/ZWM2Uq.png);
+			background-size: cover;
+		}
+		h1{
+			text-align: center;
+			font-size: 120px;
+			margin-bottom: 50px;
+			color:hotpink;
+			font-family: 'Berkshire Swash', cursive
+		}
+		#pixel{
+			height:250px;
+			width:400px;
+			float: left;
+			margin-left: 400px;
+			background-image: url(pix.png);
+			border-radius: 20px;
+			box-shadow: 2px 2px 10px gray;
+			background-size: 100% 100%;
+            background: #fed766 ;
+            color:black;
+            font-size: 50px;
+            text-align: center;
+            padding-top: 70px;
+
+		}
+		#bricks{
+			height:250px;
+			width:400px;
+			float:left;
+			margin-left: 200px;
+			border-radius: 20px;
+			box-shadow: 2px 2px 10px gray;
+			background-image: url(bri.png);
+			background-size:100% 100%;
+            background-color:#5dddfd;
+            color:black;
+            font-size: 50px;
+            text-align: center;
+            padding-top: 70px;
+
+		}
+		#kings{
+			height:250px;
+			width:400px;
+			clear:both;
+			margin-top:350px;
+			margin-left: 720px;
+			border-radius: 20px;
+			box-shadow: 2px 2px 10px gray;
+			background-image: url(bri.png);
+			background-size:100% 100%;
+            background-color:rgb(238, 78, 158);
+            color:black;
+            font-size: 50px;
+            text-align: center;
+            padding-top: 70px;
+            
+		}
+		#pixel:hover,#bricks:hover,#kings:hover{
+			transform: scale(1.1);
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<h1>Game Center</h1>
+	<a href="ourpattern/exemple-1.html" style="text-decoration: none;"><div id="pixel">English4kids</div></a>
+	<a href="add.html" style="text-decoration: none;"><div id="bricks">Math4kids</div></a>
+	<a href="Fun/project.html" style="text-decoration: none;"><div id="kings">Fun4kids</div></a>
+</div>
+</body>
+</html>

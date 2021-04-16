@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body
+{
+font-family: Dela Gothic One,Verdana, Geneva, Tahoma, sans-serif ;
+
+}
+
+.container
+{
+    padding:20px;
+    background-color:#5dddfd ;
+    font-family:Dela Gothic One,Verdana, Geneva, Tahoma, sans-serif ;
+    text-align:left;
+    padding-left: 150px;
+    color:white;
+}
+h3{
+    margin:0% 0% 0% 12%;
+    padding-top:2%;
+}
+
+span {
+    position:absolute;
+    /* color:green; */
+    font-weight:bold;
+    z-index:2;
+    margin-top:455px;
+    margin-left:100px;
+    font-family:Verdana;
+    width:450px;
+    text-align:center;
+}
+
+#bg {
+    position:absolute;
+    z-index:0;
+}
+
+
+
+#lien {
+    position:absolute;
+    z-index:2;
+    width:120px;
+    margin-top:28%;
+    margin-left:73%;
+}
+#lien1 {
+    position:absolute;
+    z-index:2;
+    width:120px;
+    margin-top:22%;
+    margin-left:73%;
+}
+
+.cage {
+    position:absolute;
+    border:1px solid #666666;
+    width:170px;
+    height:170px;
+    z-index:2;
+    display:inline-block;
+    margin-top:3%;
+    background-color: #fed766;
+    border-radius: 10px;
+    transition: 1s;
+    
+
+}
+
+
+#d1 {
+    margin-left:150px;
+}
+
+#d2 {
+    margin-left:350px;
+}
+
+#d3 {
+    margin-left:550px;
+}
+
+#d4 {
+    margin-left:750px;
+}
+
+#d5 {
+    margin-left:950px;
+}
+
+#d6 {
+    margin-left:1150px;
+}
+
+.div2 {
+    position:absolute;
+    z-index:2;
+    font-size:100px;
+    font-weight:bold;
+    color:#fe4a49;
+    font-family:Verdana;
+    cursor:move; 
+    width:36px;
+    height:40px;
+    line-height:60px;
+    text-align: center;
+    padding:25px;
+}
+
+
+#a {
+    margin-top:380px;
+    margin-left:650px;
+}
+
+#b {
+    margin-top:300px;
+    margin-left:500px;
+}
+
+#c {
+    margin-top:340px;
+    margin-left:580px;
+}
+
+#d {
+    margin-top:310px;
+    margin-left:700px;
+}
+
+#e {
+    margin-top:270px;
+    margin-left:580px;
+}
+
+#f {
+    margin-top:340px;
+    margin-left:420px;
+}
+
+.myButton {
+	box-shadow: -5px -4px 24px -10px #276873;
+	background:linear-gradient(to bottom, #5dddfd 5%, #5dddfd 100%);
+	background-color:#5dddfd;
+	border-radius:19px;
+	border:1px solid #47bfdd;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:28px;
+	font-weight:bold;
+	padding:16px 50px;
+	text-decoration:none;
+	text-shadow:2px -1px 11px #3d768a;
+    width:200px;
+    height: 75px;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+#msg
+{
+    cursor: pointer;
+    font-size: 40px;
+    margin-top:25%;
+    margin-left:2%;
+    background-color:radial-gradient(circle at top left,#fd00da,#19d7f8);
+}

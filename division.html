@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Add</title>
+</head>
+<body>
+
+<!-- first section -->
+    <audio id="myaudio">
+        <source src="wrong sound.wav" >
+    </audio>
+    <header>
+        <div class="container">
+            <h1>Math 4  Kids</h1>
+                <ul>
+                    <li ><a  href="add.html"> Add </a></li>
+                    <li><a href="subtract.html">Subtract</a></li>
+                    <li><a href="multiply.html">Multiply </a></li>
+                    <li class="current"><a href="division.html">Divide</a></li>
+                </ul>
+        </div>
+    </header>
+
+<!-- equation -->
+
+    <div class="wrapper">
+        <div class="equation">
+            <div>
+                <p id="par" style="display:inline; font-size: 30px;"> your score: </p> 
+            </div>
+            <h1 id="num1" style="color:red;">1</h1>
+            <h1  style="color:blue;">/</h1>
+            <h1 id="num2" style="color:yellow;">1</h1>
+            <h1  style="color:red;">=</h1>
+            <h1  style="color:gray;">?</h1>
+        </div>
+ <!-- answers -->
+        <div class="answer_option   option">
+            <h1 id="option1">1</h1>
+            <h1 id="option2">2</h1>
+            <h1 id="option3">3</h1>
+        </div>
+    </div>
+    <script src="division.js"></script>
+</body>
+</html>
