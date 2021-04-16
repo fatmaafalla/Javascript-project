@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>X-O Game</title>
+
+<style>
+body{
+   
+    background-image:url("last.jfif");
+    /* linear-gradient(rgba(0,0,0,0,0.5),(rgba(0,0,0,0,0.5)),url(" "); */
+    /* background-color: rgba(0,0,0,.6); */
+    /* gradient(rgba(0,0,0,0,.5),rgba(0,0,0,0,.5)), */
+    background-repeat:no-repeat ;
+    background-size:cover;
+     height:auto; 
+}
+    .wrapper{
+    width:600px;
+    height:480px;
+    margin: 0 auto;
+    }
+    .square{
+    width:150px;
+    height:150px;
+    background:rgb(87 50 87);
+    margin:5px;
+    font-size: 150px;
+    font-family:sans-serif ;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    float: left;
+  
+    }
+.text{
+margin-top: 5%;
+}
+.text h1{
+    color: rgb(82, 53, 112);
+    text-align: center;
+    font-size:40px;
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="text">
+        <h1>Let's Play Now...</h1>
+    </div>
+
+<div class="wrapper">
+<div class="square" id="A1" onclick="insert(this.id)"></div>
+<div class="square" id="A2" onclick="insert(this.id)"></div>
+<div class="square" id="A3" onclick="insert(this.id)"></div>
+<div class="square" id="A4" onclick="insert(this.id)"></div>
+<div class="square" id="A5" onclick="insert(this.id)"></div>
+<div class="square" id="A6" onclick="insert(this.id)"></div>
+<div class="square" id="A7" onclick="insert(this.id)"></div>
+<div class="square" id="A8" onclick="insert(this.id)"></div>
+<div class="square" id="A9" onclick="insert(this.id)"></div>
+</div>
+
+<script>
+
+var turn = true; //true means x turn
+var squares=[];
+////////
+function reset(A,B,C){
+document.getElementById('A'+A).style.color="#000";
+document.getElementById('A'+B).style.color="#000";
+document.getElementById('A'+C).style.color="#000";   
+setTimeout(function(){location.reload()},2000);
+
+}
+
+//////////////
+function checkwinner(){
+for(var i=1; i<=9; i++)
+{squares[i] =document.getElementById('A'+i).innerHTML;
+
+}
+
+//check horizontal 
+if(squares[1]==squares[2] && squares[2]==squares[3] && squares[1]!="") 
+{alert('player ' + squares[1] + ' wins the game');
+reset(1,2,3);
+}
+if(squares[4]==squares[5] && squares[5]==squares[6] && squares[4]!="") 
+{alert('player ' + squares[4] + ' wins the game');
+reset(4,5,6);
+}
+if(squares[7]==squares[8] && squares[8]==squares[9] && squares[7]!="") 
+{alert('player ' + squares[7] + ' wins the game');
+reset(7,8,9);
+}
+
+//check vertical
+if(squares[1]==squares[4] && squares[4]==squares[7] && squares[1]!="") 
+{alert('player ' + squares[1] + ' wins the game');
+reset(1,4,7);
+}
+if(squares[2]==squares[5] && squares[5]==squares[8] && squares[2]!="") 
+{alert('player ' + squares[2] + ' wins the game');
+reset(2,5,8);
+}
+if(squares[3]==squares[6] && squares[6]==squares[9] && squares[3]!="") 
+{alert('player ' + squares[3] + ' wins the game');
+reset(3,6,9);
+}
+
+//check diagonal
+if(squares[1]==squares[5] && squares[5]==squares[9] && squares[1]!="") 
+{alert('player ' + squares[1] + ' wins the game');
+reset(1,5,9);
+}
+if(squares[3]==squares[5] && squares[5]==squares[7] && squares[3]!="") 
+{alert('player ' + squares[3] + ' wins the game');
+reset(3,5,7);
+}
+}
+
+
+function insert(id){
+var s= document.getElementById(id);
+if(turn && s.innerHTML==""){
+s.innerHTML="X";
+turn=!turn;
+}
+else if(!turn && s.innerHTML==""){
+s.innerHTML="O";
+turn=!turn;
+}
+checkwinner();
+   }
+
+
+    
+</script>
+</body>
+
+</head>
+</html>
